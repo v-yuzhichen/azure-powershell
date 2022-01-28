@@ -31,7 +31,10 @@ The **Get-AzCdnProfileResourceUsage** cmdlet gets resource limits and current us
 
 ### Example 1
 ```powershell
-PS C:\> Get-AzCdnProfileResourceUsage -ProfileName profile1 -ResourceGroupName rg
+Get-AzCdnProfileResourceUsage -ProfileName profile1 -ResourceGroupName rg
+```
+
+```output
 ResourceType Unit  CurrentValue Limit
 ------------ ----  ------------ -----
 endpoint     count            2    25
