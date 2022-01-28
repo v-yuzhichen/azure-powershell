@@ -33,9 +33,12 @@ The **Enable-AzCdnCustomDomain** cmdlet enables the secured HTTPS delivery of a 
 ### Example 1
 ```powershell
 Enable-AzCdnCustomDomain -CustomDomainName $customDomainName -EndpointName $endpointName -ProfileName $profileName -ResourceGroupName $resourceGroupName
+<<<<<<< HEAD
+=======
 ```
 ```output
 true
+>>>>>>> 0a61a393bd (split AzCdn examples)
 ```
 
 Enable https delivery of the custom domain.
