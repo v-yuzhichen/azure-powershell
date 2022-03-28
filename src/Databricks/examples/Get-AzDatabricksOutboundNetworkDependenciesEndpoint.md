@@ -1,9 +1,7 @@
 ### Example 1: Gets the list of endpoints that VNET Injected Workspace calls Azure Databricks Control Plane
 ```powershell
-Get-AzDatabricksOutboundNetworkDependenciesEndpoint -ResourceGroupName "databricks-rg-zbpoy7" -WorkspaceName databricks-portal
-```
+PS C:\> Get-AzDatabricksOutboundNetworkDependenciesEndpoint -ResourceGroupName "databricks-rg-zbpoy7" -WorkspaceName databricks-portal
 
-```output
 Category : Webapp
 Endpoint : {{
              "endpointDetails": [

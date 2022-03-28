@@ -32,7 +32,8 @@ The operation to delete the run command.
 
 ### Example 1: Remove Run Command
 ```powershell
-Remove-AzVMRunCommand -ResourceGroupName $rgname -VMName $vmname -RunCommandName "firstruncommand"
+PS C:\> Remove-AzVMRunCommand -ResourceGroupName $rgname -VMName $vmname -RunCommandName "firstruncommand"
+
 ```
 
 Remove a Run Command by its Name

@@ -52,12 +52,6 @@ subject-prefix: ADDomainService
 # identity-correction-for-post: true
 
 directive:
-  - from: swagger-document
-    where: $.definitions..pfxCertificatePassword
-    transform: $.format = "password"
-  - from: swagger-document
-    where: $.definitions..trustPassword
-    transform: $.format = "password"
   # Following is two common directive which are normally required in all the RPs
   # 1. Remove the unexpanded parameter set
   # 2. For New-* cmdlets, ViaIdentity is not required, so CreateViaIdentityExpanded is removed as well
@@ -90,6 +84,7 @@ directive:
     set: 
       subject-prefix: ADDomainService
       subject: $2
+    hide: true
   - where:
       verb: Get
       subject: (^DomainService)(.*) 

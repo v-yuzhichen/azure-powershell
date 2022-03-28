@@ -1,9 +1,7 @@
 ### Example 1: Get the list of capabilities of the location
 ```powershell
-Get-AzContainerInstanceCapability -Location eastus
-```
+PS C:\> Get-AzContainerInstanceCapability -Location eastus
 
-```output
 Gpu  IPAddressType Location OSType       ResourceType   
 ---  ------------- -------- ------       ------------   
 None Public        eastus   NotSpecified containerGroups

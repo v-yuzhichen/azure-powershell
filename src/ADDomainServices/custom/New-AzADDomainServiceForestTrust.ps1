@@ -22,7 +22,7 @@ Create a in-memory object for ForestTrust
 .Outputs
 Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.ForestTrust
 .Link
-https://docs.microsoft.com/powershell/module/az.ADDomainServices/new-AzADDomainServiceForestTrust
+https://docs.microsoft.com/en-us/powershell/module/az.ADDomainServices/new-AzADDomainServiceForestTrust
 #>
 function New-AzADDomainServiceForestTrust {
     [OutputType('Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.ForestTrust')]
@@ -52,7 +52,10 @@ function New-AzADDomainServiceForestTrust {
         $Object.FriendlyName = $FriendlyName
         $Object.RemoteDnsIP = $RemoteDnsIP
         $Object.TrustDirection = $TrustDirection
-        $Object.TrustPassword = $TrustPassword
+        if ($PSBoundParameters.ContainsKey('TrustPassword')) {
+            $psTxt = . "$PSScriptRoot/../utils/Unprotect-SecureString.ps1" $TrustPassword
+            $Object.TrustPassword = $psTxt
+        } 
         $Object.TrustedDomainFqdn = $TrustedDomainFqdn
         return $Object
     }

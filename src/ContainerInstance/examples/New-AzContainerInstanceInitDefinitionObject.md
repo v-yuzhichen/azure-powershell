@@ -1,9 +1,7 @@
 ### Example 1: Set up the init container definition
 ```powershell
-New-AzContainerInstanceInitDefinitionObject -Name "initDefinition" -Command "/bin/sh -c myscript.sh"
-```
+PS C:\> New-AzContainerInstanceInitDefinitionObject -Name "initDefinition" -Command "/bin/sh -c myscript.sh"
 
-```output
 Name
 ----
 initDefinition

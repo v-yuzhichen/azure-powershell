@@ -1,9 +1,7 @@
 ### Example 1: Create ServiceForestTrust for ADDomain
 ```powershell
-New-AzADDomainServiceForestTrust -FriendlyName FriendlyNameTest
-```
+PS C:\> New-AzADDomainServiceForestTrust -FriendlyName FriendlyNameTest
 
-```output
 FriendlyName     RemoteDnsIP TrustDirection TrustPassword TrustedDomainFqdn
 ------------     ----------- -------------- ------------- -----------------
 FriendlyNameTest

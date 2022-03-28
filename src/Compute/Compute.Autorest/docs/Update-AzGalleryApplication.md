@@ -32,7 +32,8 @@ Update a gallery Application Definition.
 
 ### Example 1: Update a Gallery Application
 ```powershell
-Update-AzGalleryApplication -ResourceGroupName $rgName -GalleryName $galleryName -Name $name -Description "New Description"
+PS C:\> Update-AzGalleryApplication -ResourceGroupName $rgName -GalleryName $galleryName -Name $name -Description "New Description"
+
 ```
 
 Updating a Gallery Application.

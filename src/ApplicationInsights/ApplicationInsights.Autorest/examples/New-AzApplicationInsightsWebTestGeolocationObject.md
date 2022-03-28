@@ -1,8 +1,7 @@
 ### Example 1: Create a in-memory object for WebTestGeolocation
 ```powershell
-New-AzApplicationInsightsWebTestGeolocationObject -Location "emea-nl-ams-azr"
-```
-```output
+PS C:\> New-AzApplicationInsightsWebTestGeolocationObject -Location "emea-nl-ams-azr"
+
 Location
 --------
 emea-nl-ams-azr

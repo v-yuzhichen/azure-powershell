@@ -1,9 +1,7 @@
 ### Example 1: Get a Databricks workspace with name
 ```powershell
-Get-AzDatabricksWorkspace -Name databricks-test -ResourceGroupName databricks-rg-rqb2yo
-```
+PS C:\> Get-AzDatabricksWorkspace -Name databricks-test -ResourceGroupName databricks-rg-rqb2yo
 
-```output
 Name            ResourceGroupName    Location Managed Resource Group ID
 ----            -----------------    -------- -------------------------
 workspace3miaeb databricks-rg-rqb2yo eastus   /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k
@@ -13,11 +11,9 @@ This command gets a Databricks workspace in a resource group.
 
 ### Example 2: List all Databricks workspaces in a subscription
 ```powershell
-Get-AzDatabricksWorkspace
-```
+PS C:\> Get-AzDatabricksWorkspace
 
-```output
-Name                ResourceGroupName    Location       Managed Resource Group ID
+ame                ResourceGroupName    Location       Managed Resource Group ID
 ----                -----------------    --------       -------------------------
 workspace1xfmkv     databricks-rg-13vdtb eastus         /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace1xfmkv-s41tghmif7cle
 workspace-pwsh01    databricks-rg-13vdtb eastus         /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace-pwsh01-sdenr3zv5tyh9
@@ -30,10 +26,8 @@ This command lists all Databricks workspaces in a subscription.
 
 ### Example 3: List all Databricks workspaces in a resource group
 ```powershell
-Get-AzDatabricksWorkspace -ResourceGroupName databricks-rg-rqb2yo
-```
+PS C:\> Get-AzDatabricksWorkspace -ResourceGroupName databricks-rg-rqb2yo
 
-```output
 Name            ResourceGroupName    Location       Managed Resource Group ID
 ----            -----------------    --------       -------------------------
 workspace3miaeb databricks-rg-rqb2yo eastus         /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/databricks-rg-workspace3miaeb-3c0s2mbgrqv9k

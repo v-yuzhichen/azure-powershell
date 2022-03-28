@@ -20,6 +20,9 @@
 - [Environment Variable Reference](#supported-environment-in-test-framework)
 
 ## Getting Started
+-  Install the latest Az.Resources from the [PSGallery](https://www.powershellgallery.com/) into Windows PowerShell
+    - Run Windows PowerShell as administrator and execute following command
+        - `Install-Module -Name Az.Resources -Scope AllUsers -AllowClobber` 
 -  Double click `.\tools\PS-VSPrompt` shortcut
 	- This starts the VS Developer command prompt in PowerShell inside the `azure-powershell/tools` directory
 - Import the `Repo-Tasks` module that helps to perform basic repository tasks
@@ -30,6 +33,8 @@
 The `TestFramework` library is available on NuGet at https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.TestFramework/ .
 
 Instructions on manually downloading the library are available on NuGet, however, `TestFramework` will automatically be downloaded as part of the build process, so the manual download is usually not necessary.
+
+The target framework of test is .Net Core 3.1, please ensure .Net runtime Microsoft.NETCore.App 3.1 is installed. You can list all installed version via `dotnet --info`.
 
 ## Setup prior to Record or Playback of tests
 
@@ -84,7 +89,7 @@ Set-TestEnvironment -ServicePrincipalId <servicePrincipalId> -ServicePrincipalSe
 #### Environment Variables
 
 `TEST_CSM_ORGID_AUTHENTICATION`
-* This is the connection string that determines how to connect to Azure. This includes both your authentiation and the Azure environment to connect to.
+* This is the connection string that determines how to connect to Azure. This includes both your authentication and the Azure environment to connect to.
 
 `AZURE_TEST_MODE`
 * This specifies whether the test framework will `Record` test sessions or `Playback` previously recorded test sessions.
@@ -124,7 +129,7 @@ AZURE_TEST_MODE=Record
 
 ## Record or Playback Tests
 
-- [Run the tests](https://github.com/Azure/azure-powershell/blob/master/documentation/development-docs/azure-powershell-developer-guide.md#recordingrunning-tests) and make sure that you got a generated `.json` file that matches the test name in the bin folder under the `SessionRecords` folder
+- [Run the tests](https://github.com/Azure/azure-powershell/blob/main/documentation/development-docs/azure-powershell-developer-guide.md#recordingrunning-tests) and make sure that you got a generated `.json` file that matches the test name in the bin folder under the `SessionRecords` folder
 - Copy the `SessionRecords` folder inside the test project and add all `*.json` files in Visual Studio setting "Copy to Output Directory" property to "Copy if newer"
 - To assure that the records work fine, delete the connection string (default mode is Playback mode) OR change HttpRecorderMode within the connection string to "Playback" and run the tests
 

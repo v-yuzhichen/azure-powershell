@@ -1,9 +1,7 @@
 ### Example 1: Create a new vault storage setting object
 ```powershell
-New-AzDataProtectionBackupVaultStorageSettingObject -Type GeoRedundant -DataStoreType VaultStore
-```
+PS C:\> New-AzDataProtectionBackupVaultStorageSettingObject -Type GeoRedundant -DataStoreType VaultStore
 
-```output
 DatastoreType Type
 ------------- ----
 VaultStore    GeoRedundant

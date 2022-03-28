@@ -1,9 +1,7 @@
 ### Example 1: Get a MSIX Package by Name
 ```powershell
-Get-AzWvdMsixPackage -HostPoolName HostPoolName -ResourceGroupName ResourceGroupName -SubscriptionId SubscriptionId -FullName PackageFullName
-```
+PS C:\> Get-AzWvdMsixPackage -HostPoolName HostPoolName -ResourceGroupName ResourceGroupName -SubscriptionId SubscriptionId -FullName PackageFullName
 
-```output
 Name                                                  Type
 ----                                                  ----
 HostPoolName/MSIXPackage_FullName                     Microsoft.DesktopVirtualization/hostpools/msixpackages
@@ -13,10 +11,8 @@ This command gets a MSIX Package in a HostPool.
 
 ### Example 2: List MSIX Packages 
 ```powershell
-Get-AzWvdMsixPackage -HostPoolName HostPoolName -ResourceGroupName ResourceGroupName -SubscriptionId SubscriptionId
-```
+PS C:\> Get-AzWvdMsixPackage -HostPoolName HostPoolName -ResourceGroupName ResourceGroupName -SubscriptionId SubscriptionId
 
-```output
 Name                                                  Type
 ----                                                  ----
 HostPoolName/MSIXPackage_FullName1                    Microsoft.DesktopVirtualization/hostpools/msixpackages

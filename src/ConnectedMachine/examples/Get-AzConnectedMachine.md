@@ -1,9 +1,7 @@
 ### Example 1: List all connected machines in a subscription
 ```powershell
-Get-AzConnectedMachine -SubscriptionId 67379433-5e19-4702-b39a-c0a03ca8d20c
-```
+PS C:\> Get-AzConnectedMachine -SubscriptionId 67379433-5e19-4702-b39a-c0a03ca8d20c
 
-```output
 Name           Location OSName   Status     ProvisioningState
 ----           -------- ------   ------     -----------------
 winwestus2_1   westus2  windows  Connected  Succeeded
@@ -17,10 +15,8 @@ Lists all connected machines in a subscription. If subscription isn't specified,
 
 ### Example 2: List all connected machines in a resource group
 ```powershell
-Get-AzConnectedMachine -ResourceGroupName contoso-connected-machines
-```
+PS C:\> Get-AzConnectedMachine -ResourceGroupName contoso-connected-machines
 
-```output
 Name           Location OSName   Status     ProvisioningState
 ----           -------- ------   ------     -----------------
 winwestus2_2   westus2  windows  Connected  Succeeded
@@ -31,10 +27,8 @@ List all connected machines in a resource group.
 
 ### Example 3: Get a connected machine in a resource group by name
 ```powershell
-Get-AzConnectedMachine -ResourceGroupName contoso-connected-machines -Name winwestus2_1
-```
+PS C:\> Get-AzConnectedMachine -ResourceGroupName contoso-connected-machines -Name winwestus2_1
 
-```output
 Name           Location OSName   Status     ProvisioningState
 ----           -------- ------   ------     -----------------
 winwestus2_1   westus2  windows  Connected  Succeeded
