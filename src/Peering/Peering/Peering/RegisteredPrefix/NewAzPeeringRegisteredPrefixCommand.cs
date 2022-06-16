@@ -161,8 +161,6 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Peering.Peering
         /// </exception>
         /// <exception cref="Exception">
         /// </exception>
-        /// <exception cref="ArmErrorException">
-        /// </exception>
         /// <exception cref="HttpRequestException">
         /// </exception>
         private PSPeeringRegisteredPrefix CreateParameterSetNameByResourceAndName()
@@ -189,8 +187,6 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Peering.Peering
         /// <exception cref="PSArgumentException">
         /// </exception>
         /// <exception cref="Exception">
-        /// </exception>
-        /// <exception cref="ArmErrorException">
         /// </exception>
         /// <exception cref="HttpRequestException">
         /// </exception>
@@ -219,8 +215,6 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Peering.Peering
         /// <exception cref="PSArgumentException">
         /// </exception>
         /// <exception cref="Exception">
-        /// </exception>
-        /// <exception cref="ArmErrorException">
         /// </exception>
         /// <exception cref="HttpRequestException">
         /// </exception>

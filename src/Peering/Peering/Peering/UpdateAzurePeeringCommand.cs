@@ -352,6 +352,8 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Peering.Peering
         /// <param name="directPeering">
         /// The direct peering.
         /// </param>
+        /// <param name="resourceGroupName"></param>
+        /// <param name="name"></param>
         /// <returns>
         /// The <see cref="PSDirectPeeringModelView"/>.
         /// </returns>
@@ -399,7 +401,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Peering.Peering
         /// <summary>
         /// The update exchange peering.
         /// </summary>
-        /// <param name="psExchange">
+        /// <param name="exchangePeering">
         /// The ps exchange.
         /// </param>
         /// <param name="resourceGroupName">
