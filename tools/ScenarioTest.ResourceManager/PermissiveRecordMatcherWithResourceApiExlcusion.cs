@@ -128,7 +128,10 @@ namespace Microsoft.WindowsAzure.Commands.ScenarioTest
         /// Helper method to determine whether or not this request api version should be ignored
         /// </summary>
         /// <param name="requestUri">The request uri</param>
-        /// <param name="apiVersion">The api verison to use</paraam>
+        /// <param name="shouldIgnoreGenericResource"></param>
+        /// <param name="providersToIgnore"></param>
+        /// <param name="resourcesToIgnore"></param>
+        /// <param name="apiVersion">The api verison to use</param>
         /// <returns></returns>
         public static bool ContainsIgnoredProvider(
             string requestUri,

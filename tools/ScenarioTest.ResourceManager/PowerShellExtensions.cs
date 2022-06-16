@@ -97,7 +97,9 @@ namespace Microsoft.WindowsAzure.Commands.ScenarioTest
         /// Logs a PowerShell exception thrown from PowerShell.Invoke, parsing the inner 
         /// PowerShell error record if available
         /// </summary>
+        /// <param name="powershell"></param>
         /// <param name="runtimeException">The exception to parse</param>
+        /// <param name="xunitLogger"></param>
         public static void LogPowerShellException(
             this System.Management.Automation.PowerShell powershell,
             Exception runtimeException,
@@ -130,6 +132,7 @@ namespace Microsoft.WindowsAzure.Commands.ScenarioTest
         /// Log the PowerShell Streams from a PowerShell invocation
         /// </summary>
         /// <param name="powershell">The PowerShell instance to log</param>
+        /// <param name="xunitLogger"></param>
         public static void LogPowerShellResults(
             this System.Management.Automation.PowerShell powershell,
             XunitTracingInterceptor xunitLogger)
@@ -141,6 +144,8 @@ namespace Microsoft.WindowsAzure.Commands.ScenarioTest
         /// Log the PowerShell Streams from a PowerShell invocation
         /// </summary>
         /// <param name="powershell">The PowerShell instance to log</param>
+        /// <param name="output"></param>
+        /// <param name="xunitLogger"></param>
         public static void LogPowerShellResults(
             this System.Management.Automation.PowerShell powershell,
             Collection<PSObject> output,
@@ -230,6 +235,7 @@ namespace Microsoft.WindowsAzure.Commands.ScenarioTest
         /// Log a single PowerShell stream, using the given name
         /// </summary>
         /// <typeparam name="T">The type of the internal data record (different for every stream)</typeparam>
+        /// <param name="xunitLogger"></param>
         /// <param name="stream">The stream to log</param>
         /// <param name="name">The name of the stream to print in the log</param>
         private static void LogPowerShellStream<T>(
